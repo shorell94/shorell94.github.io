@@ -79,8 +79,7 @@
 
 
 
-<meta name="description" content="#初步认识命令行
-1. 命令历史窗口：“F2”可以显示更多的历史信息。
+<meta name="description" content="初步认识命令行1. 命令历史窗口：“F2”可以显示更多的历史信息。
 2. 新建文件：命令行中键入“NEW”后按Enter键，弹出“选择样板”对话框，选择后即可新建文件。
     ***** 样板的选择 *****
     2.1 二维
@@ -90,18 +89,16 @@
 <meta property="og:title" content="CAD-基础知识">
 <meta property="og:url" content="shorell94.github.io/2019/01/15/CAD-基础知识/index.html">
 <meta property="og:site_name" content="狗儿子不给想名字">
-<meta property="og:description" content="#初步认识命令行
-1. 命令历史窗口：“F2”可以显示更多的历史信息。
+<meta property="og:description" content="初步认识命令行1. 命令历史窗口：“F2”可以显示更多的历史信息。
 2. 新建文件：命令行中键入“NEW”后按Enter键，弹出“选择样板”对话框，选择后即可新建文件。
     ***** 样板的选择 *****
     2.1 二维
         ①“acadISO-Named Plot Styles”使用“命名打印样式”
         ②“acadiso”使用“颜色相关打印样式”">
-<meta property="og:updated_time" content="2019-01-15T12:27:33.507Z">
+<meta property="og:updated_time" content="2019-01-15T13:56:07.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CAD-基础知识">
-<meta name="twitter:description" content="#初步认识命令行
-1. 命令历史窗口：“F2”可以显示更多的历史信息。
+<meta name="twitter:description" content="初步认识命令行1. 命令历史窗口：“F2”可以显示更多的历史信息。
 2. 新建文件：命令行中键入“NEW”后按Enter键，弹出“选择样板”对话框，选择后即可新建文件。
     ***** 样板的选择 *****
     2.1 二维
@@ -316,8 +313,7 @@
       
 
       
-        <p>#初步认识命令行</p>
-<pre><code>1. 命令历史窗口：“F2”可以显示更多的历史信息。
+        <h1 id="初步认识命令行"><a href="#初步认识命令行" class="headerlink" title="初步认识命令行"></a><strong>初步认识命令行</strong></h1><pre><code>1. 命令历史窗口：“F2”可以显示更多的历史信息。
 2. 新建文件：命令行中键入“NEW”后按Enter键，弹出“选择样板”对话框，选择后即可新建文件。
     ***** 样板的选择 *****
     2.1 二维
@@ -330,8 +326,7 @@
 3. 保存文件：命令行中键入”Save“后按Enter键，即可保存文件。
 4. 清理文件：命令行中输入”Purge“后按Enter键，即可清理垃圾文件。
 ...
-</code></pre><p>#常用命令</p>
-<pre><code>1. 设置点样式：Ddptype
+</code></pre><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><strong>常用命令</strong></h1><pre><code>1. 设置点样式：Ddptype
 2. 绘制单个点：point
 3. 定数等分点：divide
 4. 定距等分点：measure
@@ -349,9 +344,13 @@
     ④@320&lt;120 Enter键（设置第3个点与第2个点所连线段：长度为320，与平行线夹角为120）
     ⑤c Enter键（封闭图形）
     ***** the end *****
-7. 绘制多段线：Pline（每个点均以上一个点的位置为参考对象）
-8. 绘制多线：Mline
-</code></pre>
+7. 绘制多段线：Pline
+    ①角度以整张图为参考对象（“&lt;300”=“&lt;-60”）
+    ②坐标是以上一个点为参考对象（上一个点为原点）
+8. 编辑多段线：Pedit
+9. 绘制多线：Mline（由“两条或两条以上的平行线元素”构成）
+</code></pre><p><strong>日期：2019-01-15</strong><br><strong>进度：P48</strong></p>
+
       
     </div>
     
@@ -384,6 +383,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/17/自身写作缺陷的思考/" rel="prev" title="抓主要矛盾">
+                抓主要矛盾 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -435,8 +438,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -451,7 +463,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -487,6 +499,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初步认识命令行"><span class="nav-number">1.</span> <span class="nav-text">初步认识命令行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">2.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
